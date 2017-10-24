@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/QueryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:id="@+id/cookingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:text="Cooking"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:textAlignment="center"/>
+
+        <SeekBar
+            android:id="@+id/CookingQSB"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.5"
+            android:max="10" />
+        <TextView
+            android:id="@+id/CookingQTV"
+            android:text="0.0"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/HouseRepairLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/cookingLayout"
+        android:weightSum="5">
+
+        <TextView
+            android:text="House Repair"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:textAlignment="center"/>
+
+        <SeekBar
+            android:id="@+id/HouseRepairQSB"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.5"
+            android:max="10"
+            />
+        <TextView
+            android:id="@+id/HouseRepairQTV"
+            android:text="0.0"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/EducationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/HouseRepairLayout"
+        android:weightSum="5">
+
+        <TextView
+            android:text="Education"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:textAlignment="center"/>
+
+        <SeekBar
+            android:id="@+id/EducationQSB"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.5"
+            android:max="10"
+            />
+        <TextView
+            android:id="@+id/EducationQTV"
+            android:text="0.0"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/EntertainmentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/EducationLayout"
+        android:weightSum="5">
+
+        <TextView
+            android:text="Entertainment"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:textAlignment="center"/>
+
+        <SeekBar
+            android:id="@+id/EntertainmentQSB"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.5"
+            android:max="10"
+            />
+        <TextView
+            android:id="@+id/EntertainmentQTV"
+            android:text="0.0"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/QueryLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Query" />
+
+    <LinearLayout
+        android:id="@+id/AnsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/Query"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/cookingLayout_ans"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:id="@+id/CookingAnsTV"
+                android:text="0.0"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:textAlignment="center"/>
+
+            <SeekBar
+                android:id="@+id/CookingAnsSB"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:max="10" />
+
+            <TextView
+                android:text="Cooking"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2.0"
+                android:gravity="center_vertical"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/HouseRepairLayout_ans"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/cookingLayout_ans"
+            android:weightSum="6">
+
+            <TextView
+                android:id="@+id/HouseRepairAnsTV"
+                android:text="0.0"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:textAlignment="center"/>
+
+            <SeekBar
+                android:id="@+id/HouseRepairAnsSB"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:max="10" />
+
+            <TextView
+                android:text="House Repair"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2.0"
+                android:gravity="center_vertical"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/EducationLayout_ans"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/HouseRepairLayout_ans"
+            android:weightSum="6">
+
+            <TextView
+                android:id="@+id/EducationAnsTV"
+                android:text="0.0"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:textAlignment="center"/>
+
+            <SeekBar
+                android:id="@+id/EducationAnsSB"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:max="10" />
+
+            <TextView
+                android:text="Education"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2.0"
+                android:gravity="center_vertical"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/EntertainmentLayout_ans"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/EducationLayout_ans"
+            android:weightSum="6">
+
+            <TextView
+                android:id="@+id/EntertainmentAnsTV"
+                android:text="0.0"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:textAlignment="center"/>
+
+            <SeekBar
+                android:id="@+id/EntertainmentAnsSB"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:max="10" />
+
+            <TextView
+                android:text="Entertainment"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2.0"
+                android:gravity="center_vertical"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
